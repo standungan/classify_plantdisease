@@ -1,15 +1,19 @@
 # image dataset location
+from types import new_class
+
+
 train_dir = 'D:\Dataset\PlantDisease\Train'
 valid_dir = 'D:\Dataset\PlantDisease\Validation'
 test_dir = 'D:\Dataset\PlantDisease\Test'
 
 # dataset parameters
 img_size = 128
+n_classes = 3
 
 # dataloader parameters
 num_workers = 2
 shuffle = True
-batch_size = 4
+batch_size = 5
 
 # computing device
 device = "cpu"

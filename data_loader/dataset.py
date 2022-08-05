@@ -1,6 +1,5 @@
 from torchvision.datasets import ImageFolder
 from torchvision import transforms
-
 import config as cfg
 
 # default image data transforms
