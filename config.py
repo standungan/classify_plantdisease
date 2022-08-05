@@ -1,21 +1,27 @@
-train_dir = '..\..\Dataset\PlantDisease\Train'
-valid_dir = '..\..\Dataset\PlantDisease\Validation'
-test_dir = '..\..\Dataset\PlantDisease\Test'
+# image dataset location
+train_dir = 'D:\Dataset\PlantDisease\Train'
+valid_dir = 'D:\Dataset\PlantDisease\Validation'
+test_dir = 'D:\Dataset\PlantDisease\Test'
 
-img_transform = ""
-# { train, test}
-# resize, flip. crop, normalize
+# dataset parameters
+img_size = 128
 
+# dataloader parameters
+num_workers = 2
+shuffle = True
+batch_size = 4
+
+# computing device
 device = "cpu"
 
-# train params
+# training parameters
 model_arx = ""
 lossFunc = ""
 optim = ""
 epochs = 5
-batch_size = 4
 
-# validation
+
+# validation parameters
 save_threshold = 0.85
 
 # save model 
