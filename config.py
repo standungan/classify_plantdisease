@@ -13,7 +13,7 @@ n_classes = 3
 # dataloader parameters
 num_workers = 2
 shuffle = True
-batch_size = 5
+batch_size = 4
 
 # computing device
 device = "cpu"

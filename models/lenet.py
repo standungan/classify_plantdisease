@@ -29,7 +29,7 @@ class LeNet5(nn.Module):
         x = torch.flatten(x,1)
         logits = self.classifier(x)
         probs = F.softmax(logits, dim=1)
-        return probs
+        return logits, probs
 
 if __name__ == "__main__":  
     model = LeNet5(5)

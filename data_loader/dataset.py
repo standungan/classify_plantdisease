@@ -30,7 +30,6 @@ def dset_imageFolder():
 
     return train_dataset, valid_dataset, test_dataset
 
-
 # implementasi dataset type = CSV files
 def dset_imageCSV():
     pass
