@@ -37,9 +37,13 @@ if __name__ == '__main__':
         
         # train
         print("Training...")
+
         model.train()  
+        
         current_loss = 0
+        
         current_acc = 0
+        
         for batch_idx, (data, target) in enumerate(tqdm(train_loader)): # use tqdm progress bar
             optimizer.zero_grad()
             data = data.to(device)
@@ -56,6 +60,7 @@ if __name__ == '__main__':
         
         train_loss = current_loss / len(train_loader)
         print("Training Loss : {:.6f}".format(train_loss))
+        
         # validation
         print("Validation...")
         model.eval()
